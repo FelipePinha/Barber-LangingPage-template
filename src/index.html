@@ -9,7 +9,7 @@
 </head>
 <body class="bg-zinc-100 overflow-x-hidden">
     
-    <header class="py-4 px-8 flex items-center justify-between fixed w-full bg-dark-blue text-zinc-100">
+    <header class="py-4 px-8 flex items-center justify-between fixed w-full bg-dark-blue text-zinc-100 z-20">
         <a class="flex items-center gap-2 text-4xl">
             Barber
             <span class="font-bold">X</span>
@@ -36,21 +36,114 @@
         </div>
     </section>
 
-    <section>
-        <div class="max-w-6xl mx-auto flex justify-center mt-10">
+    <section class="p-12">
+        <div class="max-w-6xl mx-auto flex justify-center">
             <div class="w-full flex flex-col items-center gap-5 md:flex-row">
-                <div class="w-[40%]">
+                <div class="w-full md:w-[40%]">
                     <img class="max-w-full shadow" src="./images/about.jpg" alt="imagem sobre">
                 </div>
-                <div class="w-[60%] flex flex-col gap-5">
+                <div class="w-full md:w-[60%] flex flex-col gap-5">
                     <p class="text-lg text-zinc-500 font-semibold">Sobre nós</p>
                     <h2 class="text-4xl text-dark-blue font-bold">XX anos de experiência</h2>
                     <p class="text-zinc-500 text-lg">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti blanditiis eius alias, accusantium voluptate ipsum facilis maiores quidem, inventore, voluptatibus delectus quibusdam suscipit assumenda reprehenderit architecto sed. Accusamus, nihil laborum?
-                        Explicabo et magnam, fuga aliquam placeat molestiae. Adipisci exercitationem voluptate ullam recusandae. Eveniet vitae omnis nihil minus quisquam ipsam, dolor doloremque obcaecati deserunt temporibus quis aliquam autem iure placeat dolore!
+                        Explicabo et magnam, fuga aliquam placeat molestiae. Adipisci exercitationem voluptate ullam recusandae.
+                    </p>
+                    <p class="text-zinc-500 text-lg">
+                        Eveniet vitae omnis nihil minus quisquam ipsam, dolor doloremque obcaecati deserunt temporibus quis aliquam autem iure placeat dolore!
                         Maxime maiores id hic facilis vel. Optio voluptatibus a reiciendis maxime laudantium repellat voluptatum possimus animi quod, magnam tenetur, aspernatur eius iste. Maiores minima, perferendis ducimus maxime illum recusandae hic!
                     </p>
                     <a class="px-6 py-3 bg-yellow text-lg hover:bg-yellow/85 font-semibold w-52 text-center" href="#">Entre em contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-12">
+        <div class="max-w-6xl mx-auto flex flex-col justify-center space-y-5">
+            <div class="text-center">
+                <p class="text-lg text-zinc-500 font-semibold">Nossos serviços</p>
+                <h2 class="font-bold text-dark-blue text-4xl">Os melhores cortes para você</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-5">
+                <div class="flex flex-col items-center bg-zinc-200">
+                    <div class="w-full relative">
+                        <img class="w-full " src="./images/service-1.jpg">
+                    </div>
+                    <div class="text-center p-3">
+                        <h3 class="text-2xl font-bold">Lorem ipsum</h3>
+                        <p class="text-zinc-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates consequuntur facilis sequi et. sit amet consectetur</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center bg-zinc-200">
+                    <div class="w-full relative">
+                        <img class="w-full " src="./images/service-2.jpg">
+                    </div>
+                    <div class="text-center p-3">
+                        <h3 class="text-2xl font-bold">Lorem ipsum</h3>
+                        <p class="text-zinc-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates consequuntur facilis sequi et. sit amet consectetur</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center bg-zinc-200">
+                    <div class="w-full relative">
+                        <img class="w-full " src="./images/service-3.jpg">
+                    </div>
+                    <div class="text-center p-3">
+                        <h3 class="text-2xl font-bold">Lorem ipsum</h3>
+                        <p class="text-zinc-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates consequuntur facilis sequi et. sit amet consectetur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-12">
+        <div class="max-w-6xl mx-auto flex flex-col justify-center space-y-5">
+            <div class="text-center">
+                <p class="text-lg text-zinc-500 font-semibold">Preços</p>
+                <h2 class="font-bold text-dark-blue text-4xl">Os melhores preços do bairro</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-5">
+                <div class="w-full bg-zinc-200 flex items-center gap-5 hover:bg-yellow transition">
+                    <div class="w-[20%] sm:w-full relative">
+                        <img class="w-full " src="./images/price-1.jpg">
+                    </div>
+
+                    <div class="w-[80%] p-2">
+                        <h3 class="font-bold text-dark-blue">Lorem Ipsum</h3>
+                        <p class="text-zinc-600">R$ 20,00</p>
+                    </div>
+                </div>
+                <div class="w-full bg-zinc-200 flex items-center gap-5 hover:bg-yellow transition">
+                    <div class="w-[20%] sm:w-full relative">
+                        <img class="w-full " src="./images/price-6.jpg">
+                    </div>
+
+                    <div class="w-[80%] p-2">
+                        <h3 class="font-bold text-dark-blue">Lorem Ipsum</h3>
+                        <p class="text-zinc-600">R$ 20,00</p>
+                    </div>
+                </div>
+                <div class="w-full bg-zinc-200 flex items-center gap-5 hover:bg-yellow transition">
+                    <div class="w-[20%] sm:w-full relative">
+                        <img class="w-full " src="./images/price-3.jpg">
+                    </div>
+
+                    <div class="w-[80%] p-2">
+                        <h3 class="font-bold text-dark-blue">Lorem Ipsum</h3>
+                        <p class="text-zinc-600">R$ 20,00</p>
+                    </div>
+                </div>
+                <div class="w-full bg-zinc-200 flex items-center gap-5 hover:bg-yellow transition">
+                    <div class="w-[20%] sm:w-full relative">
+                        <img class="w-full " src="./images/price-4.jpg">
+                    </div>
+
+                    <div class="w-[80%] p-2">
+                        <h3 class="font-bold text-dark-blue">Lorem Ipsum</h3>
+                        <p class="text-zinc-600">R$ 20,00</p>
+                    </div>
                 </div>
             </div>
         </div>

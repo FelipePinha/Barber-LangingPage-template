@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
     <title>Barber Site</title>
     
     <link href="./css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body class="bg-zinc-100 overflow-x-hidden">
     
@@ -16,7 +22,7 @@
         </a>
 
         <nav class="text-lg">
-            <ul class="flex items-center">
+            <ul class="hidden md:flex items-center">
                 <li class="px-3 py-1.5 hover:bg-zinc-100/55 cursor-pointer"><a href="#">Início</a></li>
                 <li class="px-3 py-1.5 hover:bg-zinc-100/55 cursor-pointer"><a href="#">Sobre</a></li>
                 <li class="px-3 py-1.5 hover:bg-zinc-100/55 cursor-pointer"><a href="#">Serviços</a></li>
@@ -24,13 +30,33 @@
                 <li class="px-3 py-1.5 hover:bg-zinc-100/55 cursor-pointer"><a href="#">Contato</a></li>
             </ul>
         </nav>
+
+        <button id="open-menu" class="md:hidden w-10">
+            <img class="max-w-full" src="./images/menu-icon.png" alt="botão abrir menu">
+        </button>
+        
+        <nav id="mobile-menu" class="fixed top-0 -right-[100%] md:hidden bg-dark-blue h-screen w-1/2 transition-all duration-100">
+            <div class="flex items-start justify-between">
+                <ul class="flex flex-col flex-1 space-y-2 mt-4">
+                    <li class="px-3 py-1.5 cursor-pointer"><a href="#">Início</a></li>
+                    <li class="px-3 py-1.5 cursor-pointer"><a href="#">Sobre</a></li>
+                    <li class="px-3 py-1.5 cursor-pointer"><a href="#">Serviços</a></li>
+                    <li class="px-3 py-1.5 cursor-pointer"><a href="#">Preços</a></li>
+                    <li class="px-3 py-1.5 cursor-pointer"><a href="#">Contato</a></li>
+                </ul>
+                <button id="close-menu" class="p-4 w-20">
+                    <img class="max-w-full" src="./images/close-icon.png" alt="botão fechar menu">
+                </button>
+            </div>
+        </nav>
     </header>
+    
 
     <section class="w-screen h-screen bg-hero-banner bg-no-repeat bg-cover bg-center">
         <div class="w-screen h-screen z-10 bg-black/55">
             <div class="max-w-[700px] h-full mx-auto flex flex-col justify-center items-center space-y-5 text-zinc-100">
-                <h1 class="text-6xl font-bold">Estilo em Cada Corte</h1>
-                <p class="text-2xl">Transforme seu visual com a arte da <span class="font-bold">Barber X</span></p>
+                <h1 class="text-4xl md:text-6xl font-bold">Estilo em Cada Corte</h1>
+                <p class="text-sm sm:text-lg md:text-2xl">Transforme seu visual com a arte da <span class="font-bold">Barber X</span></p>
                 <a class="px-6 py-1.5 bg-yellow text-lg hover:brightness-95 font-semibold transition duration-200" href="#">Saiba mais</a>
             </div>
         </div>
@@ -39,10 +65,10 @@
     <section class="p-12">
         <div class="max-w-6xl mx-auto flex justify-center">
             <div class="w-full flex flex-col items-center gap-5 md:flex-row">
-                <div class="w-full md:w-[40%]">
+                <div class="w-full lg:w-[40%]">
                     <img class="max-w-full shadow" src="./images/about.jpg" alt="imagem sobre">
                 </div>
-                <div class="w-full md:w-[60%] flex flex-col gap-5">
+                <div class="w-full lg:w-[60%] flex flex-col gap-5">
                     <p class="text-lg text-zinc-500 font-semibold">Sobre nós</p>
                     <h2 class="text-4xl text-dark-blue font-bold">XX anos de experiência</h2>
                     <p class="text-zinc-500 text-lg">
@@ -164,7 +190,7 @@
         </div>
     </section>
 
-    <footer class="max-w-6xl mx-auto text-zinc-500 p-5 space-y-5">
+    <footer class="text-zinc-100 p-5 space-y-10 bg-yellow">
         <div class="w-full flex flex-col text-start items-center space-y-3">
             <h3 class="text-2xl text-dark-blue font-bold">Endereço</h3>
             <div class="flex items-center gap-3">
@@ -175,17 +201,18 @@
                 <img class="w-5" src="./images/phone.png" alt="telefone">
                 <p class="flex-1">(xx) xxxxx-xxxx</p>
             </div>
-            <div class="flex items-end gap-3 border ml-9">
+            <div class="flex items-end gap-3 ml-9">
                 <img class="w-5" src="./images/mail.png" alt="email">
                 <p>info@exemplo.com</p>
             </div>
         </div>
 
         <div class="flex items-center justify-center gap-2 ml-9">
-            <p class="text-sm">Feito por:</p>
-            <a class="text-sm text-blue-300 underline" href="https://github.com/felipepinha">Felipe Carvalho</a>
+            <p class="text-xs">Feito por:</p>
+            <a class="text-xs text-blue-900 underline" href="https://github.com/felipepinha">Felipe Carvalho</a>
         </div>
     </footer>
 
+    <script src="./js/main.js"></script>
 </body>
 </html>

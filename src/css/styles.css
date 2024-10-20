@@ -1,5 +1,6 @@
 * {
     font-family: 'Open Sans';
+    scroll-behavior: smooth;
 }
 
 .menu-open {

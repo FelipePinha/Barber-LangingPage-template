@@ -15,7 +15,7 @@
 </head>
 <body class="bg-zinc-100 overflow-x-hidden">
     
-    <header class="py-4 px-8 flex items-center justify-between fixed w-full bg-dark-blue text-zinc-100 z-20">
+    <header id="header" class="py-4 px-8 flex items-center justify-between fixed w-full bg-dark-blue text-zinc-100 z-20 header-scrolled">
         <a class="flex items-center gap-2 text-4xl">
             Barber
             <span class="font-bold">X</span>
@@ -52,7 +52,7 @@
     </header>
     
 
-    <section class="w-screen h-screen bg-hero-banner bg-no-repeat bg-cover bg-center">
+    <section id="banner" class="w-screen h-screen bg-hero-banner bg-no-repeat bg-cover bg-center">
         <div class="w-screen h-screen z-10 bg-black/55">
             <div class="max-w-[700px] h-full mx-auto flex flex-col justify-center items-center space-y-5 text-zinc-100">
                 <h1 class="text-4xl md:text-6xl font-bold">Estilo em Cada Corte</h1>
@@ -62,34 +62,37 @@
         </div>
     </section>
 
-    <section class="p-12">
+    <section id="about" class="p-12">
         <div class="max-w-6xl mx-auto flex justify-center">
             <div class="w-full flex flex-col items-center gap-5 md:flex-row">
                 <div class="w-full lg:w-[40%]">
                     <img class="max-w-full shadow" src="./images/about.jpg" alt="imagem sobre">
                 </div>
-                <div class="w-full lg:w-[60%] flex flex-col gap-5">
+                <div class="w-full lg:w-[60%] flex flex-col gap-4">
                     <p class="text-lg text-zinc-500 font-semibold">Sobre nós</p>
-                    <h2 class="text-4xl text-dark-blue font-bold">XX anos de experiência</h2>
+                    <h2 class="text-4xl text-dark-blue font-bold">XX Lorem Ipsum</h2>
                     <p class="text-zinc-500 text-lg">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti blanditiis eius alias, accusantium voluptate ipsum facilis maiores quidem, inventore, voluptatibus delectus quibusdam suscipit assumenda reprehenderit architecto sed. Accusamus, nihil laborum?
                         Explicabo et magnam, fuga aliquam placeat molestiae. Adipisci exercitationem voluptate ullam recusandae.
                     </p>
                     <p class="text-zinc-500 text-lg">
                         Eveniet vitae omnis nihil minus quisquam ipsam, dolor doloremque obcaecati deserunt temporibus quis aliquam autem iure placeat dolore!
-                        Maxime maiores id hic facilis vel. Optio voluptatibus a reiciendis maxime laudantium repellat voluptatum possimus animi quod, magnam tenetur, aspernatur eius iste. Maiores minima, perferendis ducimus maxime illum recusandae hic!
+                        Maxime maiores id hic facilis vel. Optio voluptatibus a reiciendis maxime laudantium repellat voluptatum possimus animi quod, magnam tenetur, aspernatur eius iste. Maiores minima doloremque obcaecati deserunt.
                     </p>
-                    <a class="px-6 py-3 bg-yellow text-lg hover:bg-yellow/85 font-semibold w-52 text-center" href="#">Entre em contato</a>
+                    <p class="text-zinc-500 text-lg">
+                        Eveniet vitae omnis nihil minus quisquam ipsam, dolor doloremque obcaecati deserunt.
+                    </p>
+                    <a class="px-6 py-4 border-2 border-dark-blue text-dark-blue hover:bg-dark-blue hover:text-zinc-100 font-semibold w-52 text-center transition durations-200" href="#">Entre em contato</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="p-12">
+    <section id="services" class="p-12">
         <div class="max-w-6xl mx-auto flex flex-col justify-center space-y-5">
             <div class="text-center">
                 <p class="text-lg text-zinc-500 font-semibold">Nossos serviços</p>
-                <h2 class="font-bold text-dark-blue text-4xl">Os melhores cortes para você</h2>
+                <h2 class="font-bold text-dark-blue text-4xl">Lorem ipsum dolor sit amet</h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-5">
                 <div class="flex flex-col items-center bg-zinc-200">
@@ -123,7 +126,7 @@
         </div>
     </section>
 
-    <section class="p-12">
+    <section id="prices" class="p-12">
         <div class="max-w-6xl mx-auto flex flex-col justify-center space-y-5">
             <div class="text-center">
                 <p class="text-lg text-zinc-500 font-semibold">Preços</p>
@@ -175,7 +178,7 @@
         </div>
     </section>
 
-    <section class="bg-dark-blue py-10">
+    <section id="contact" class="bg-dark-blue py-10">
         <h2 class="text-center text-yellow font-bold text-4xl">Contato</h2>
         <div class="max-w-6xl mx-auto flex items-center justify-center">
             <form class="w-full p-5 space-y-5">
@@ -190,7 +193,7 @@
         </div>
     </section>
 
-    <footer class="text-zinc-100 p-5 space-y-10 bg-yellow">
+    <footer id="footer" class="text-zinc-100 p-5 space-y-10 bg-yellow">
         <div class="w-full flex flex-col text-start items-center space-y-3">
             <h3 class="text-2xl text-dark-blue font-bold">Endereço</h3>
             <div class="flex items-center gap-3">

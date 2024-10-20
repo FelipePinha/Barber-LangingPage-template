@@ -5,3 +5,17 @@
 .menu-open {
     right: 0;
 }
+
+header {
+    transition: all .3s ease;
+}
+
+.header-scrolled {
+    background: rgba(29, 36, 52, .5);
+}
+
+@media (max-width: 768px) {
+    .header-scrolled {
+        background: rgba(29, 36, 52, 1);
+    }
+}

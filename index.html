@@ -10,8 +10,8 @@
     
     <title>Barber Site</title>
     
-    <link href="./css/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link href="./src/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/styles.css">
 </head>
 <body class="bg-zinc-100 overflow-x-hidden">
     
@@ -32,7 +32,7 @@
         </nav>
 
         <button id="open-menu" class="md:hidden w-10">
-            <img class="max-w-full" src="./images/menu-icon.png" alt="botão abrir menu">
+            <img class="max-w-full" src="./src/images/menu-icon.png" alt="botão abrir menu">
         </button>
         
         <nav id="mobile-menu" class="fixed top-0 -right-[100%] md:hidden bg-dark-blue h-screen w-1/2 transition-all duration-100">
@@ -45,7 +45,7 @@
                     <li class="px-3 py-1.5 cursor-pointer"><a href="#contact">Contato</a></li>
                 </ul>
                 <button id="close-menu" class="p-4 w-20">
-                    <img class="max-w-full" src="./images/close-icon.png" alt="botão fechar menu">
+                    <img class="max-w-full" src="./src/images/close-icon.png" alt="botão fechar menu">
                 </button>
             </div>
         </nav>
@@ -66,7 +66,7 @@
         <div class="max-w-6xl mx-auto flex justify-center">
             <div class="w-full flex flex-col items-center gap-5 md:flex-row">
                 <div class="w-full lg:w-[40%]">
-                    <img class="max-w-full shadow" src="./images/about.jpg" alt="imagem sobre">
+                    <img class="max-w-full shadow" src="./src/images/about.jpg" alt="imagem sobre">
                 </div>
                 <div class="w-full lg:w-[60%] flex flex-col gap-4">
                     <p class="text-lg text-zinc-500 font-semibold">Sobre nós</p>
@@ -97,7 +97,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-5">
                 <div class="flex flex-col items-center bg-zinc-200">
                     <div class="w-full relative">
-                        <img class="w-full " src="./images/service-1.jpg">
+                        <img class="w-full " src="./src/images/service-1.jpg">
                     </div>
                     <div class="text-center p-3">
                         <h3 class="text-2xl font-bold">Lorem ipsum</h3>
@@ -106,7 +106,7 @@
                 </div>
                 <div class="flex flex-col items-center bg-zinc-200">
                     <div class="w-full relative">
-                        <img class="w-full " src="./images/service-2.jpg">
+                        <img class="w-full " src="./src/images/service-2.jpg">
                     </div>
                     <div class="text-center p-3">
                         <h3 class="text-2xl font-bold">Lorem ipsum</h3>
@@ -115,7 +115,7 @@
                 </div>
                 <div class="flex flex-col items-center bg-zinc-200">
                     <div class="w-full relative">
-                        <img class="w-full " src="./images/service-3.jpg">
+                        <img class="w-full " src="./src/images/service-3.jpg">
                     </div>
                     <div class="text-center p-3">
                         <h3 class="text-2xl font-bold">Lorem ipsum</h3>
@@ -136,7 +136,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-5">
                 <div class="w-full bg-zinc-200 flex items-center gap-5 hover:bg-yellow transition">
                     <div class="w-[20%] sm:w-full relative">
-                        <img class="w-full " src="./images/price-1.jpg">
+                        <img class="w-full " src="./src/images/price-1.jpg">
                     </div>
 
                     <div class="w-[80%] p-2">
@@ -146,7 +146,7 @@
                 </div>
                 <div class="w-full bg-zinc-200 flex items-center gap-5 hover:bg-yellow transition">
                     <div class="w-[20%] sm:w-full relative">
-                        <img class="w-full " src="./images/price-6.jpg">
+                        <img class="w-full " src="./src/images/price-6.jpg">
                     </div>
 
                     <div class="w-[80%] p-2">
@@ -156,7 +156,7 @@
                 </div>
                 <div class="w-full bg-zinc-200 flex items-center gap-5 hover:bg-yellow transition">
                     <div class="w-[20%] sm:w-full relative">
-                        <img class="w-full " src="./images/price-3.jpg">
+                        <img class="w-full " src="./src/images/price-3.jpg">
                     </div>
 
                     <div class="w-[80%] p-2">
@@ -166,7 +166,7 @@
                 </div>
                 <div class="w-full bg-zinc-200 flex items-center gap-5 hover:bg-yellow transition">
                     <div class="w-[20%] sm:w-full relative">
-                        <img class="w-full " src="./images/price-4.jpg">
+                        <img class="w-full " src="./src/images/price-4.jpg">
                     </div>
 
                     <div class="w-[80%] p-2">
@@ -197,15 +197,15 @@
         <div class="w-full flex flex-col text-start items-center space-y-3">
             <h3 class="text-2xl text-dark-blue font-bold">Endereço</h3>
             <div class="flex items-center gap-3">
-                <img class="w-5" src="./images/address.png" alt="endereço">
+                <img class="w-5" src="./src/images/address.png" alt="endereço">
                 <p class="flex-1">Sua localização</p>
             </div>
             <div class="flex items-center gap-3">
-                <img class="w-5" src="./images/phone.png" alt="telefone">
+                <img class="w-5" src="./src/images/phone.png" alt="telefone">
                 <p class="flex-1">(xx) xxxxx-xxxx</p>
             </div>
             <div class="flex items-end gap-3 ml-9">
-                <img class="w-5" src="./images/mail.png" alt="email">
+                <img class="w-5" src="./src/images/mail.png" alt="email">
                 <p>info@exemplo.com</p>
             </div>
         </div>
@@ -216,6 +216,6 @@
         </div>
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="./src/js/main.js"></script>
 </body>
 </html>

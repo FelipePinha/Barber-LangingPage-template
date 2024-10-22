@@ -711,12 +711,12 @@ video {
   gap: 0.75rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .space-y-10 > :not([hidden]) ~ :not([hidden]) {
@@ -806,14 +806,6 @@ video {
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
 }
 
-.bg-dark-blue\/\[\.1\] {
-  background-color: rgb(29 36 52 / .1);
-}
-
-.bg-dark-blue\/\[\.5\] {
-  background-color: rgb(29 36 52 / .5);
-}
-
 .bg-hero-banner {
   background-image: url('../images/single.jpg');
 }
@@ -875,19 +867,9 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .text-center {
@@ -998,6 +980,11 @@ video {
   transition-duration: 200ms;
 }
 
+.hover\:bg-dark-blue:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 36 52 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-yellow:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(213 185 129 / var(--tw-bg-opacity));
@@ -1005,11 +992,6 @@ video {
 
 .hover\:bg-zinc-100\/55:hover {
   background-color: rgb(244 244 245 / 0.55);
-}
-
-.hover\:bg-dark-blue:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 36 52 / var(--tw-bg-opacity));
 }
 
 .hover\:text-dark-blue:hover {

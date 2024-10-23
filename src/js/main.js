@@ -48,7 +48,7 @@ const handleFormSubmit = (event) => {
         clearError()
     }
 
-    const phoneNumber = "+55119981428501"
+    const phoneNumber = "+5511981428501"
     const url = `https://wa.me/${phoneNumber}?text=Olá, meu nome é *${formData.name}*.%0a%0a${formData.message}`
 
     window.open(url, '_blank')

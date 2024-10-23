@@ -36,11 +36,15 @@ const handleGetFormValues = () => {
     }
 }
 
+const getCurrentHour = () => {
+    const currentHour = new Date().getHours()
+    return currentHour
+}
+
 const handleFormSubmit = (event) => {
     event.preventDefault()
 
     const formData = handleGetFormValues()
-    
 
     if(!formData) {
         return
@@ -48,8 +52,21 @@ const handleFormSubmit = (event) => {
         clearError()
     }
 
+    const currentHour = getCurrentHour()
     const phoneNumber = "+5511981428501"
-    const url = `https://wa.me/${phoneNumber}?text=Olá, meu nome é *${formData.name}*.%0a%0a${formData.message}`
+    let greeting;
+
+    if(currentHour >= 5 && currentHour < 12) {
+        greeting = 'Bom dia'
+    } else if(currentHour >= 12 && currentHour < 18) {
+        greeting = 'Boa tarde'
+    } else {
+        greeting = 'Boa noite'
+    }
+
+    const text = `${greeting}, meu nome é *${formData.name}*.%0a%0a${formData.message}`
+    
+    const url = `https://wa.me/${phoneNumber}?text=${text}`
 
     window.open(url, '_blank')
 }
